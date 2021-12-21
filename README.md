@@ -1,2 +1,5 @@
-# BiddingSystem
-Database project involving a basic bidding system.
+![PAGE1\_PROJECT](https://i.imgur.com/FmuomaR.png)
+![PAGE2\_PROJECT](https://i.imgur.com/krtkD6l.png)
+![PAGE3\_PROJECT](https://i.imgur.com/hWD4uuP.png)
+![PAGE4\_PROJECT](https://i.imgur.com/QEwzCBO.png)
+![PAGE5\_PROJECT](https://i.imgur.com/9MExuin.png)

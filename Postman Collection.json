@@ -1,0 +1,476 @@
+{
+	"info": {
+		"_postman_id": "d17a66d6-9e48-4876-a3b6-e0207a8b7b52",
+		"name": "Projeto BD",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Bem vindo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/dbproj/welcome/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"dbproj",
+						"welcome",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"pedromar\",\r\n    \"email\": \"pedromartins@gmail.com\",\r\n    \"password\": \"password\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/dbproj/user/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"dbproj",
+						"user",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"pedromar\",\r\n    \"password\": \"password\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/dbproj/user/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"dbproj",
+						"user",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Devolver Leiloes",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJiYXJlY2EiLCJleHAiOjE2MjI0NjgyNTMsImlhdCI6MTYyMjQ2NDY1M30.Dy2fjyUA7iNFb_1F4Nkwk6AGs6uBjj_jQQ0uGWpPTvw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/dbproj/leiloes/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"dbproj",
+						"leiloes",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Devolver ID's Leiloes",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJiYXJlY2EiLCJleHAiOjE2MjIzOTM4MDgsImlhdCI6MTYyMjM5MDIwOH0.JctdqyVfh9XjPmw3NcZipffNGsJboWrg7s_5cuh0wt0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/dbproj/leiloes/ISBN1/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"dbproj",
+						"leiloes",
+						"ISBN1",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Devolver Leilao",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJwZWRyb21hciIsImV4cCI6MTYyMjQ3MzIxNSwiaWF0IjoxNjIyNDY5NjE1fQ.Yc_Ww0nFQstEMumNEHxqSdf-oZ969Yb4yuQF-mfLDeg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/dbproj/leilao/1/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"dbproj",
+						"leilao",
+						"1",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Devolver Versao de Leilao",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJwZWRyb21hciIsImV4cCI6MTYyMjQ3Mzk3NywiaWF0IjoxNjIyNDcwMzc3fQ.W88vqWq1e1EqsS9XFvzSgFtkIACL9A5r8YY_KI2iHBQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/dbproj/leilao/2/3/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"dbproj",
+						"leilao",
+						"2",
+						"3",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Meus Leiloes",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJiYXJlY2EiLCJleHAiOjE2MjI0NjM0NjIsImlhdCI6MTYyMjQ1OTg2Mn0.MSN34hCqIMGpoErs8B7vPeVnvKyPvqpriCrSWtmFIEg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/dbproj/leiloes/meusleiloes/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"dbproj",
+						"leiloes",
+						"meusleiloes",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Criar Leilao",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJiYXJlY2EiLCJleHAiOjE2MjI0Njk2OTQsImlhdCI6MTYyMjQ2NjA5NH0.GiSvp0vnwC0kFWbPZJhlWrO-qPC6HfpnRyNRYKmVtes",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"artigoId\": \"ISBN5\",\r\n    \"precoMinimo\": \"4000.00\",\r\n    \"titulo\": \"Placa grafica RTX3090 nova\",\r\n    \"descricao\": \"Placa grafica Nvidia RTX3090 nao usada, ainda na caixa\",\r\n    \"dataFinal\": \"2021-09-19 21:02:13\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/dbproj/leilao/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"dbproj",
+						"leilao",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Licitar",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0ZTIiLCJleHAiOjE2MjI0Njc1MDAsImlhdCI6MTYyMjQ2MzkwMH0.kV8_FLPOKdI5eBJ1BiM1Rd87_xZQuH_XBndpmbhUuq0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"licitacao\": \"4002\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/dbproj/licitar/5/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"dbproj",
+						"licitar",
+						"5",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Editar Leilao",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJiYXJlY2EiLCJleHAiOjE2MjI0NjE3OTksImlhdCI6MTYyMjQ1ODE5OX0.MUwEuf7aiGgyVdDzvExWhzXfYCXg3kURfx1SjFJuYMI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"novoTitulo\": \"Vendo Guitarra eletrica como nova\",\r\n    \"novaDescricao\": \"Nao usada, ainda na caixa, cor preta\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/dbproj/leilao/2/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"dbproj",
+						"leilao",
+						"2",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Escrever Mensagem",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0ZTIiLCJleHAiOjE2MjI0NjYzMTAsImlhdCI6MTYyMjQ2MjcxMH0.reox_a7fGNZAvD2jESGLGUtjXXdnpy7Wan4MSgVbv7Y",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"mensagem\": \"Nao acha que esta um bocado cara?\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/dbproj/mensagem/5/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"dbproj",
+						"mensagem",
+						"5",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ler Notificacoes",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJiYXJlY2EiLCJleHAiOjE2MjI0NjgzMjgsImlhdCI6MTYyMjQ2NDcyOH0.awES3uuqqLjI2HVTEjNJV45BiCOYFOhGxemZDBD5QZU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/dbproj/notificacoes/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"dbproj",
+						"notificacoes",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Atualizar Datas",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJiYXJlY2EiLCJleHAiOjE2MjI0NjU1NDgsImlhdCI6MTYyMjQ2MTk0OH0.Omzn4LCBUKOIIHvyOzT4c3dvO4OoNKZXh_AEEveUGNs",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/dbproj/leiloes/atualizar/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"dbproj",
+						"leiloes",
+						"atualizar",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
